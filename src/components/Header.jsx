@@ -12,7 +12,7 @@ const Header = () => {
         <ul style={{display: "flex", justifyContent: 'space-between', listStyleType: 'none'}}>
             <li ><Link to="/">Главнаeя</Link></li>
             <li><Link to="/pages/page1">Страница 1</Link></li>
-            <li><Link to="/pages/page2">Страница 2</Link></li>
+            <li><Link to="/pages/page2">Стран22ица 2</Link></li>
         </ul>
       </nav>
 
