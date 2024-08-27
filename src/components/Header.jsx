@@ -10,13 +10,13 @@ const Header = () => {
       <h1>Хедер</h1>
       <nav>
         <ul style={{display: "flex", justifyContent: 'space-between', listStyleType: 'none'}}>
-            <li ><Link to="/">Главная</Link></li>
+            <li ><Link to="/">Главнаeя</Link></li>
             <li><Link to="/pages/page1">Страница 1</Link></li>
             <li><Link to="/pages/page2">Страница 2</Link></li>
         </ul>
       </nav>
 
-    </header>
+    </header> 
   );
 };
 
