@@ -1,7 +1,11 @@
 // import React from 'react'
 
+import { useContext } from "react";
+import { Themecontext } from "../components/providers/Theme";
+
 const Page2 = () => {
-  const value = localStorage.getItem('inputValue');
+  const {value} = useContext(Themecontext) ;
+
   return (
     <div>
       <h1>Страница 2</h1>

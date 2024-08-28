@@ -2,14 +2,16 @@
 import Header from './Header'
 import Footer from './Footer'
 import { Outlet } from 'react-router-dom'
+import { Theme } from './providers/Theme'
 
 const MainLayout = () => {
   return (
-    <div>
-        <Header/>
-          <Outlet />
-        <Footer/>
-    </div>
+    <Theme>
+      <Header/>
+        <Outlet />
+      <Footer/>
+    </Theme>
+    
   )
 }
 

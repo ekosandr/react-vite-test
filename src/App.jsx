@@ -7,15 +7,17 @@ import MainLayout from './components/MainLayout';
 import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
 import Input from './components/Input/Input';
+import About from './components/About';
+
 
 
 export const router = createBrowserRouter([
   {
-    element: <MainLayout />,
+    element: <MainLayout/>,
     children: [
       {
         path: '/', 
-        element: <Page1 />, 
+        element: <About />, 
       },
       {
         path: '/pages/page2', 
@@ -24,12 +26,7 @@ export const router = createBrowserRouter([
       {
         path: '/pages/page1', 
         element: <Page1 />, 
-      },
-      {
-        path: '/components/input', 
-        element: <Input />, 
       }
-      
     ]
   }
 ]);

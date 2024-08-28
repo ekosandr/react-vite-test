@@ -14,7 +14,6 @@ const Header = () => {
             <li style={{paddingRight: '15px'}}><Link to="/">Главная</Link></li>
             <li style={{paddingRight: '15px'}}><Link to="/pages/page1">Страница 1</Link></li>
             <li style={{paddingRight: '15px'}}><Link to="/pages/page2">Страница 2</Link></li>
-            <li style={{paddingRight: '15px'}}><Link to="/components/input">Input</Link></li>
         </ul>
       </nav>
 
