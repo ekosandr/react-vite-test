@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer>
+    <footer style={{marginTop: 'auto'}}>
       <p>Футер</p>
     </footer>
   )
