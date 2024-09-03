@@ -1,20 +1,19 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import classes from './input.module.css'
+import { Themecontext } from '../providers/Theme';
 
 const Input = () => {
-    const [value, setValue] = useState ('');
+    const {value, setValue} = useContext (Themecontext);
+    
     const handlechange = (event) => {
         setValue(event.target.value);
     };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        localStorage.setItem('inputValue', value); 
-    };
+
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="input"  >Number</label>
+    <form>
+      <label htmlFor="input"  >Number: </label>
       <input
       className={classes.input} 
       id='input'

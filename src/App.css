@@ -1,46 +1,169 @@
-body {
+/* body {
   background-color: rgb(168, 254, 251);
   color: rgb(66, 1, 186);
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  align-items:center;
+  display: flex;
+ 
+}
 
-  
+header {
+  position: flex;
+  top: 0;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 20px 30px;
 }
 
 
-footer{
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  padding-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background: #f8f9fa;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  border:1px solid rgb(0, 119, 143);
+  padding: 10px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  padding: 20px;
+  margin-top: 80px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin: 20px; 
+  top: 0;
+} */
+
+
+body {
+  background-color: rgb(168, 254, 251);
+  color: rgb(66, 1, 186);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;               /* Используем flexbox для body */
+  flex-direction: column;      /* Вертикальная ориентация */
+  align-items: center;         /* Центрируем по горизонтали */
+  justify-content: center;     /* Центрируем по вертикали */
+  min-height: 100vh;           /* Устанавливаем минимальную высоту */
+  margin: 0;                   /* Убираем отступы */
+}
+
+#root {
+  max-width: 1280px;
+  text-align: center;
+  display: flex;               /* Делаем flex контейнером */
+  flex-direction: column;      /* Вертикальная ориентация */
+  align-items: center;         /* Центрируем по горизонтали */
+}
+
+header {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 20px 30px;
+}
+
+h1 {
+  margin: 0;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  padding-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 10;
-  border:1px dashed salmon;
+  background: #f8f9fa;
+  border: 1px solid rgb(0, 119, 143);
+  padding: 10px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .container {
+  padding: 20px;
   text-align: center;
+  align-items: center;
   margin: 20px; 
-  top: 0;
-  position: fixed;
-}
-
-.header {
-  font-size: 2rem; 
-  display: flex;
-  align-items: 'center'
-}
-
-.list {
-  list-style-type: none; 
-  padding: 0; 
-  margin: 0;
-}
-
-.list li {
-  margin: 10px 0; 
 }

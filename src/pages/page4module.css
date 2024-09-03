@@ -1,0 +1,80 @@
+.container {
+  padding: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-size: 20 px;
+  margin: 20px 0;
+  color: rgb(66, 1, 186);
+  font-weight: bold;
+}
+
+.variantsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 10;
+  margin: 20px 0;
+}
+
+.variantItem {
+  padding: 12px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.1s;
+  list-style-type: none;
+  
+
+}
+
+.variantItem:hover {
+  background: #e2e2e2;
+  transform: scale(1.02);
+}
+
+.resultContainer {
+  margin-bottom: 100px;
+  padding: 30px;
+  background: rgba(240, 248, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 100px;
+}
+
+.resultImage {
+  width: 40px; /* немного больше для лучшего восприятия */
+  margin-bottom: 10px;
+}
+
+.resultText {
+  font-size: 20 px;
+  margin: 10px 0;
+  color: rgb(66, 1, 186);
+}
+
+.retryButton {
+  padding: 12px 25px;
+  background: rgb(0, 123, 255);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.retryButton:hover {
+  background: rgb(0, 105, 217);
+  transform: scale(1.05);
+}
