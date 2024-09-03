@@ -9,6 +9,7 @@ import Page2 from './pages/Page2';
 // import Input from './components/Input/Input';
 import About from './components/About';
 import Page3 from './pages/Page3';
+import Page4 from './pages/Page4';
 
 
 
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       {path: '/pages/page2', element: <Page2 />},
       {path: '/pages/page1', element: <Page1 />},
       {path: '/pages/page3', element: <Page3 />},
+      {path: '/pages/page4', element: <Page4 />},
     ]
   }
 ]);

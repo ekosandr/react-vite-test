@@ -15,6 +15,7 @@ const Header = ({ openModal, showPage3 }) => {
             <li style={{paddingRight: '15px'}}><Link to="/">Главная</Link></li>
             <li style={{paddingRight: '15px'}}><Link to="/pages/page1">Страница 1</Link></li>
             <li style={{paddingRight: '15px'}}><Link to="/pages/page2">Страница 2</Link></li>
+            <li style={{paddingRight: '15px'}}><Link to="/pages/page4">Опросник</Link></li>
             {showPage3 && (
             <li style={{ paddingRight: '15px' }}><Link to="/pages/page3">Страница 3</Link></li>
           )}
