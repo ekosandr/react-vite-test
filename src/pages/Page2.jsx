@@ -1,11 +1,13 @@
 // import React from 'react'
 
 import { useContext, useEffect, useState} from "react";
+import { useNavigate } from "react-router-dom";
 import { Themecontext } from "../components/providers/Theme";
 
 const Page2 = () => {
-  const [cardNumber, setCardNumber] = useState ();
+  const [cardNumber, setCardNumber] = useState ('');
   const {value} = useContext(Themecontext);
+  const navigate =useNavigate();
 
   useEffect(() => {
     const storedCardNumber = localStorage.getItem('cardNumber');
@@ -14,10 +16,10 @@ const Page2 = () => {
 
       
       if (storedCardNumber.length < 10) {
-        window.location.href = '/pages/form';
+        navigate('/pages/form');
       }
     }
-  }, []);
+  }, [navigate]);
 
   return (
     <div>
