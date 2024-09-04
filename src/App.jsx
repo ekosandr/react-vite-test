@@ -10,6 +10,7 @@ import Page2 from './pages/Page2';
 import About from './components/About';
 import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
+import Form from './pages/Form';
 
 
 
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
       {path: '/pages/page1', element: <Page1 />},
       {path: '/pages/page3', element: <Page3 />},
       {path: '/pages/page4', element: <Page4 />},
+      {path: '/pages/form', element: <Form />},
     ]
   }
 ]);
